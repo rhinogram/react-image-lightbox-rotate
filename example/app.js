@@ -141,8 +141,8 @@ class App extends Component {
                     imageTitle={titles[this.state.index]}
                     imageCaption={captions[this.state.index]}
 
-                    onPreMovePrevRequest={this.movePrev}
-                    onPreMoveNextRequest={this.moveNext}
+                    onMovePrevRequest={this.movePrev}
+                    onMoveNextRequest={this.moveNext}
                     saveBeforeAfterState
                 />
             );
