@@ -57,12 +57,7 @@ class ReactImageLightboxRotate extends Component {
     }
 
     get svg() {
-        return <svg className="icon icon-rotate" xmlns="http://www.w3.org/2000/svg" width="512"
-                    height="512"
-                    viewBox="0 0 16 16">
-            <path fill="#ddd"
-                  d="M16 7V3l-1.1 1.1C13.6 1.6 11 0 8 0 3.6 0 0 3.6 0 8s3.6 8 8 8c2.4 0 4.6-1.1 6-2.8l-1.5-1.3C11.4 13.2 9.8 14 8 14c-3.3 0-6-2.7-6-6s2.7-6 6-6c2.4 0 4.5 1.5 5.5 3.5L12 7h4z"/>
-        </svg>;
+        return <svg className="icon icon-rotate" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#ddd" d="M24 10.1V3.4c0-.6-.4-1-1-1s-1 .4-1 1v4.3l-3.4-3.2C15.2 1.1 9.9.3 5.6 2.7 1.4 5-.8 9.9.3 14.6c1.1 4.7 5.2 8.2 10 8.5h.6c4.6 0 8.7-2.9 10.3-7.3.2-.5-.1-1.1-.6-1.3-.5-.2-1.1.1-1.3.6-1.3 3.7-5 6.1-8.9 5.9-3.9-.2-7.3-3.1-8.2-6.9-.9-3.8.9-7.9 4.4-9.8 3.5-1.9 7.8-1.3 10.6 1.5L20.5 9h-4.1c-.6 0-1 .4-1 1s.4 1 1 1H23c.1 0 .2 0 .2-.1h.1l.1-.1c.1 0 .2-.1.2-.2 0 0 0-.1.1-.1 0-.1.1-.1.1-.2.2 0 .2-.1.2-.2z"/></svg>;
     }
 
     handleMovePrev() {
@@ -116,17 +111,14 @@ class ReactImageLightboxRotate extends Component {
             ReactImageLightbox.builtinButton,
             styles.rotateRightButton,
         ];
-        const rotateLeftButtonClasses = [
+        const onMoveNextRequesButtonClasses = [
             ReactImageLightbox.toolbarItemChild,
             ReactImageLightbox.builtinButton,
-            styles.rotateLeftButton,
         ];
 
-        let rotateLeftButtonHandler = () => this.changeRotation(-90);
         let rotateRightButtonHandler = () => this.changeRotation(90);
 
         if (this.lightBox && this.lightBox.isAnimating()) {
-            rotateLeftButtonHandler = noop;
             rotateRightButtonHandler = noop;
         }
 
@@ -135,14 +127,6 @@ class ReactImageLightboxRotate extends Component {
         let toolbarButtons = this.props.toolbarButtons ? this.props.toolbarButtons : []
         toolbarButtons = toolbarButtons.concat(
           [
-              <button
-                  type="button"
-                  key="rotate-left"
-                  className={`ril-rotate-left ${rotateLeftButtonClasses.join(' ')}`}
-                  onClick={rotateLeftButtonHandler}
-              >
-                  {this.svg}
-              </button>,
               <button
                   type="button"
                   key="rotate-right"
