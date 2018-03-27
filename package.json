@@ -1,6 +1,6 @@
 {
   "name": "rhino-react-image-lightbox-rotate",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Rotate wrapper for react-image-lightbox",
   "main": "dist/umd/react-image-lightbox.js",
   "files": [
