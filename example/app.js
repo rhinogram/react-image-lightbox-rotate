@@ -179,7 +179,7 @@ class App extends Component {
                     </div>
 
                     <a href="https://github.com/fritz-c/react-image-lightbox">Examples and Documentation on Github</a>
-                    <a href="https://github.com/Horat1us/react-image-lightbox-rotate">
+                    <a href="https://github.com/Rhinogram/react-image-lightbox-rotate">
                         Examples and Documentation for <b>wrapper</b> on Github
                     </a>
 
@@ -189,8 +189,8 @@ class App extends Component {
                             href="https://github.com/fritz-c">fritz-c</a>.
                         </span>
                         <span className={styles['site-footer-owner']}>
-                            <a href="https://github.com/Horat1us/react-image-lightbox-rotate">React Image Lightbox Wrapper</a> is maintained by <a
-                            href="https://github.com/Horat1us">Horat1us</a>.
+                            <a href="https://github.com/Rhinogram/react-image-lightbox-rotate">React Image Lightbox Wrapper</a> is maintained by <a
+                            href="https://github.com/Rhinogram">Rhinogram</a>.
                         </span>
 
                         <span className={styles['site-footer-credits']}>
@@ -201,7 +201,7 @@ class App extends Component {
                     </footer>
                 </section>
 
-                <a href="https://github.com/Horat1us/react-image-lightbox-rotate">
+                <a href="https://github.com/Rhinogram/react-image-lightbox-rotate">
                     <img
                         style={{position: 'absolute', top: 0, right: 0, border: 0}}
                         src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"

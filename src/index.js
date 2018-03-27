@@ -1,6 +1,3 @@
-/**
- * Created by horat1us on 6/17/17.
- */
 import React, {Component} from 'react';
 import ReactImageLightbox, {changeAngle} from './override';
 import PropTypes from 'prop-types';
